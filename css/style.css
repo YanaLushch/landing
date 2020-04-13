@@ -1,0 +1,417 @@
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #402B2B;
+    line-height: 40px;
+    background-color: rgba(255, 249, 242)
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+/* Container */
+.container {
+    width: 1250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin:0;
+}
+/* Intro*/
+.intro {
+    height: 1185px;
+    background: url("../img/Introduction.png") 50% 0 no-repeat;
+    background-size: contain;
+}
+/* Header */
+header {
+    position: relative;
+    height: 100px;
+}
+/*Logo*/
+.logo {
+    position: absolute;
+    top: 50px;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.logo h1{
+    color: #FFFFFF;
+    font-size: 32px;
+    position: absolute;
+    top: 20px;
+    left: 50px;
+}
+.logo a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+.sign{
+    background: url("../img/logo.png")center no-repeat;
+    width: 47px;
+    height: 50px;
+}
+/*Navigation*/
+.navigation a, .get_started, .form .get_started2 {
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.navigation a:hover, .navigation2 a:hover{
+    text-decoration: underline;
+}
+.navigation, .navigation2 {
+    position: absolute;
+    width: 604px;
+    height: 60px;
+    top: 40px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.05em;
+    align-items: center;
+    z-index: 2;
+}
+/*Red Button*/
+.buttons {
+    background: #EE4D47;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.get_started{
+    position: absolute;
+    top: 550px;
+}
+.title{
+    position: absolute;
+    font-family: 'DM Serif Display';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 100%;
+    color: #FFFFFF;
+    position: absolute;
+    width: 741px;
+    height: 300px;
+    top: 190px;
+}
+.delivery{
+    background: url("../img/Delivery.png")0 0 no-repeat;
+    right: 0;
+    height: 480px;
+    width: 575.11px;
+}
+/*Main body*/
+/*About us*/
+.box1{
+    display: flex;
+    justify-content: space-between;
+}
+.about_us {
+    width: 550px;
+    left: 0;
+    margin-top: 25px;
+}
+.about_us h1{
+    color: #EE4D47;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.about_us p{
+    margin-right: 90px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.red_back{
+    background: #FCDDD4;
+    border-left: 10px solid #EE4D47;
+    border-radius: 5px;
+    margin: 20px auto 0 auto;
+    display: block;
+}
+.red_back p{
+    margin: 20px 20px 20px 50px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    display:inline-block;
+}
+/*How to apply*/
+.box2{
+    display: flex;
+    justify-content: space-between;
+} 
+.how_to{
+    width: 550px;
+    right: 0;
+}
+.applying{
+    margin-top: 40px;
+    background: url("../img/Applying.png")0 0 no-repeat;
+    height: 600px;
+    width: 575.11px;
+}
+.how_to h1{
+    color: #EE4D47;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 60px 0px 0px 90px;
+}
+.how_to p{
+    margin-left: 90px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+.faqs_guy{
+    background: url("../img/FAQ.png")0 0 no-repeat;
+    height: 1250px;
+    right: 0;
+    position: relative;
+}
+.faqs_guy:after{
+    content: '';
+    display: block;
+    width: 100vh;
+    height: 100%;
+    background-color:  rgba(255, 237, 231);
+    position: absolute;
+    left: 1212px;
+    z-index: -1;
+    top: 0;
+}
+.faqs{
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+.faqs h1{
+    color: #EE4D47;
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 10px solid #EE4D47;
+    margin: 200px 420px 0px 0px;
+}
+.faqs p{
+    font-family: DM Serif Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+}
+.collapsible, .collapsible1 {
+    background-color:rgba(255, 255, 255);
+    padding: 18px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    max-width: 400px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: rgba(255, 247, 245);
+    max-width: 400px;
+    margin: 10px 10px 10px 10px;
+
+  }
+  .questions{
+    display: flex;
+    margin-top: 100px;
+  }
+.loading{
+    text-align: center;
+    background: rgba(255, 202, 198);
+    font-size: 16px;
+    color: #EE4D47;
+    font-weight: bold;
+    align-items: center;
+    text-transform: uppercase;
+}
+/* Our Awesome Clients */
+.clients{
+    display: flex;
+    padding-top: 180px;
+}
+.title_clients{
+margin: 0px 20px 0px 0px;
+flex: 0 0 330px;
+}
+.title_clients p{
+    font-family: DM Serif Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+}
+.feedback1, .feedback2{
+    position: relative;
+    background-color: rgb(255,255,255);
+    padding: 18px;
+    max-width: 400px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    padding-bottom: 97px;
+    box-shadow: 0 4px 15px 0 rgb(255, 236, 231), 0 6px 20px 0 rgb(255, 236, 231);
+}
+.cite{
+    font-family: Rubik;
+    margin: 60px 52px 0px 48px;
+}
+.author {
+    position: absolute;
+    margin: 0 0 20px 0;
+    bottom: 0;
+    left: 66px;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.author .photo {
+    width: 45px;
+    height: 40px;
+    background: url("../img/photo.png")center no-repeat;
+    background-size: contain;
+}
+.author p{
+padding-left: 10px;
+}
+/* Footer Contact Info and Form to Submit */
+.footer{
+    height: 920px;
+    background-size: contain;
+    background: url("../img/Footer.png") 50% 0 no-repeat;
+    margin: 90px 0 0 0;
+}
+.contact{
+    display: flex;
+    position: absolute;
+}
+.descript {
+    padding: 0 0 0 20px;
+    border-left: 10px solid #EE4D47;
+    border-radius: 5px;
+    color: #FFFFFF;
+    margin: 20px 20px 20px 50px;
+    font-size: 20px;
+    width: 350px;
+    height: 0%;
+    margin: 250px 0 0 0;
+}
+.form {
+    width: 400px;
+    left:0;
+    background-color: rgb(255,255,255);
+    padding: 35px;
+    padding-bottom: 90px;
+    border-radius: 10px;
+    margin: 100px 0 0 100px;
+}
+.name{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 40px;
+}
+.input{
+    color: #402B2B;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 0;
+    background: transparent;
+    border: 1px solid #EE4D47;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+input::-webkit-input-placeholder {
+    font-family: 'Rubik', sans-serif;
+    color: #402B2B;
+    font-size: 15px;
+    font-weight:normal;
+  }
+.input:focus {
+    outline: none !important;
+    border:1px solid #EE4D47;
+    box-shadow: 0 15px 20px rgba(255, 202, 198);
+}
+.get_started2{
+    margin: 15px 0 0 0;
+    position: absolute;
+}
+.logo2{
+    display: block;
+    position: absolute;
+    background: url("../img/logo2.png")center no-repeat;
+    width: 300px;
+    top: 600px;
+    height: 100px;
+}
+.navigation2 a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.navigation2 {
+    padding: 610px 0 0 0;
+}
+.nav {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.network{
+    position: absolute;
+    display: flex;
+    width: 230px;
+    right: 0px;
+    padding: 850px 0 0 0;
+}
+.face{
+    background: url("../img/face.png") center no-repeat;
+}
+.twitt{
+    background: url("../img/twitt.png") center no-repeat;
+}
+.insta{
+    background: url("../img/insta.png") center no-repeat;
+}
+.face, .twitt, .insta {
+    display: block;
+    width: 300px;
+    height: 100px;
+}
+.copyright{
+    position: absolute;
+    padding: 860px 0 0 0;
+}
+.copyright p{
+    font-size: 16px;
+}
+
+
